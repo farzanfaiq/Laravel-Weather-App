@@ -42,7 +42,7 @@ class WeatherController extends Controller
 
 	 		$api_parsed_resp = json_decode($api_raw_resp->body(), true);
 
-	 		Cache::put($city_name, $api_parsed_resp, now()->addMinutes(10));
+	 		Cache::put($city_name, $api_parsed_resp, now()->addMinutes(60));
 
  		}
 

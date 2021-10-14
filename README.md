@@ -39,6 +39,14 @@
 If you have any queries about the configuration and installation of project, So don't hesitate to contact with me. I will try my best to provide the best solution.
 
 
+## Feature Improvments
+
+1) In this application, We are using traditional form submission with full page reload, we could implement jquery ajax for enhancement of application without full page reload.
+
+2) React JS is a best choice for this application for the enhancement of UI rendering.
+
+3) In backend we wrote the best possible bussiness logic.
+
 ## Maintainers
 
 Name: Muhammad Farzan Faiq ( Software Engineer )
