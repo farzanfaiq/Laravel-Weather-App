@@ -31,7 +31,7 @@
 							<div class="alert alert-danger alert-dismissible" role="alert">
 								<button type="button" class="close" data-dismiss="alert">&times;</button>
 								<strong>Error !</strong>
-								<p>{{ $api_resp['message'] }}</p>
+								<p>City not found.</p>
 							</div>
 						@elseif($api_resp['cod'] != 200)
 							<div class="alert alert-warning alert-dismissible" role="alert">
@@ -59,32 +59,32 @@
 						<div class="col-md-12">
 							<table class="table table-bordered table-striped table-hoverd mt-4">
 								<tr>
-									<th>Latitude</th>
-									<td>{{ $api_resp['coord']['lat'] }}</td>
+									<th width="30%">Latitude</th>
+									<td width="70%">{{ $api_resp['coord']['lat'] }}</td>
 								</tr>
 								<tr>
-									<th>Longitude</th>
-									<td>{{ $api_resp['coord']['lon']  }}</td>
+									<th width="30%">Longitude</th>
+									<td width="70%">{{ $api_resp['coord']['lon']  }}</td>
 								</tr>
 								<tr>
-									<th>Main</th>
-									<td>{{ $api_resp['weather'][0]['main'] }}</td>
+									<th width="30%">Main</th>
+									<td width="70%">{{ $api_resp['weather'][0]['main'] }}</td>
 								</tr>
 								<tr>
-									<th>Description</th>
-									<td>{{ $api_resp['weather'][0]['description'] }}</td>
+									<th width="30%">Description</th>
+									<td width="70%">{{ $api_resp['weather'][0]['description'] }}</td>
 								</tr>
 								<tr>
-									<th>Pressure</th>
-									<td>{{ $api_resp['main']['pressure'] }}</td>
+									<th width="30%">Pressure</th>
+									<td width="70%">{{ $api_resp['main']['pressure'] }}</td>
 								</tr>
 								<tr>
-									<th>Humidity</th>
-									<td>{{ $api_resp['main']['humidity'] }}</td>
+									<th width="30%">Humidity</th>
+									<td width="70%">{{ $api_resp['main']['humidity'] }}</td>
 								</tr>
 								<tr>
-									<th>Speed</th>
-									<td>{{ $api_resp['wind']['speed'] }}</td>
+									<th width="30%">Speed</th>
+									<td width="70%">{{ $api_resp['wind']['speed'] }}</td>
 								</tr>
 							</table>
 						</div>
@@ -119,7 +119,6 @@
 			// }
 			
 			///echo "<pre>"; print_r($api_resp); echo "</pre>";	
-			
 		?>
 	</div>
 </body>
