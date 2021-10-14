@@ -20,7 +20,7 @@
 1) php artisan serve
 2) Then Past this url to browser: http://127.0.0.1:8000/weather
 
-## Troubleshooting Or Cache Reset
+## Troubleshooting
 
 
 ## Cache Reset
