@@ -2,10 +2,10 @@
 
 -) Weather Information Application specially design to bring the data for specific city.
 
-## Requirements
+<!-- ## Requirements
 
 
-## Recommended
+## Recommended -->
 
 
 
@@ -26,7 +26,7 @@
 1) php artisan serve
 2) Then Past this url to browser: http://127.0.0.1:8000/weather
 
-## Troubleshooting
+<!-- ## Troubleshooting -->
 
 
 ## Cache Reset
