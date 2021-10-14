@@ -13,14 +13,20 @@
 1) git clone https://github.com/farzanfaiq/Laravel-Weather-App.git
 2) composer install
 3) php artisan key:generate
+4) php artisan route:cache
 
 ## Run Porject
 
 1) php artisan serve
 2) Then Past this url to browser: http://127.0.0.1:8000/weather
 
-## Troubleshooting
+## Troubleshooting Or Cache Reset
 
+
+## Cache Reset
+
+1) php artisan cache:clear
+2) php artisan route:clear
 
 ## FAQ
 
