@@ -53,37 +53,51 @@
 				</div>
 				<div class="col-md-12">
 					<button class="btn btn-block btn-success" type="submit">Check</button>
+					<button class="btn btn-block btn-warning mt-2" type="button" onclick="window.location.reload()"
+					>Reset</button>
 				</div>
 				@if($api_resp = Session::get('api_resp'))
 					@if($api_resp['cod'] == 200)
 						<div class="col-md-12">
 							<table class="table table-bordered table-striped table-hoverd mt-4">
 								<tr>
-									<th width="30%">Latitude</th>
+									<th width="40%">Latitude</th>
 									<td width="70%">{{ $api_resp['coord']['lat'] }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Longitude</th>
+									<th width="40%">Longitude</th>
 									<td width="70%">{{ $api_resp['coord']['lon']  }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Main</th>
+									<th width="40%">Kelvin</th>
+									<td width="70%">{{ $api_resp['main']['temp'] }}</td>
+								</tr>
+								<tr>
+									<th width="40%">Temperature (Celsius)</th>
+									<td width="70%">{{ ceil(($api_resp['main']['temp'] - 273.15)) }} &deg;</td>
+								</tr>
+								<tr>
+									<th width="40%">Temperature (Fahrenheit)</th>
+									<td width="70%">{{ ceil(((($api_resp['main']['temp'] - 273.15) * 1.8)+32)) }} &deg;</td>
+								</tr>
+								<tr>
+									<th width="40%">Main</th>
 									<td width="70%">{{ $api_resp['weather'][0]['main'] }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Description</th>
+									<th width="40%">Description</th>
 									<td width="70%">{{ $api_resp['weather'][0]['description'] }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Pressure</th>
+									<th width="40%">Pressure</th>
 									<td width="70%">{{ $api_resp['main']['pressure'] }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Humidity</th>
+									<th width="40%">Humidity</th>
 									<td width="70%">{{ $api_resp['main']['humidity'] }}</td>
 								</tr>
 								<tr>
-									<th width="30%">Speed</th>
+									<th width="40%">Speed</th>
 									<td width="70%">{{ $api_resp['wind']['speed'] }}</td>
 								</tr>
 							</table>
