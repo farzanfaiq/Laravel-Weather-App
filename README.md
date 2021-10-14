@@ -5,15 +5,21 @@
 ## Requirements
 
 
-## Recommended modules
+## Recommended
+
 
 
 ## Installation & Configuration
 
-1) git clone https://github.com/farzanfaiq/Laravel-Weather-App.git
-2) composer install
-3) php artisan key:generate
-4) php artisan route:cache
+1) Install git on you local Computer
+2) Open git terminal in your any drive.
+3) Then clone the project using this command -> git clone https://github.com/farzanfaiq/Laravel-Weather-App.git
+
+-) Open Command Prompt in your clone project directory, then run the below command one by one. 
+
+4) composer install
+5) php artisan key:generate
+6) php artisan route:cache
 
 ## Run Porject
 
