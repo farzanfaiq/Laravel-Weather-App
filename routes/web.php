@@ -18,4 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::match(['get', 'post'], '/weather', [WeatherController::class, 'index'])->name('weather');
+Route::get('/weather', [WeatherController::class, 'index'])->name('weather');
+
+Route::post('/get_weather_detail_by_city_name', [WeatherController::class, 'get_weather_detail_by_city_name'])->name('get_weather_detail_by_city_name');
