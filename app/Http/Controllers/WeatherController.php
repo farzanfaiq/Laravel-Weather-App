@@ -15,7 +15,7 @@ class WeatherController extends Controller
 
  	} 	
 
- 	public function get_weather_detail_by_city_name( Request $request ){
+ 	public function get_weather_detail_by_city_name(Request $request){
 
  		$city_name = $request->input('city_name');
 
